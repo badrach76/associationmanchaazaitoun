@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#214d3b">
+  <meta name="description" content="المنصة الرقمية لجمعية منشأ منتوجات الزيتون بإقليم قلعة السراغنة">
+  <title>جمعية منشأ منتوجات الزيتون | قلعة السراغنة</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+</head>
+<body>
+  <div class="topline"><div class="container topinner"><span>المملكة المغربية · إقليم قلعة السراغنة</span><span>المنصة الرقمية الرسمية للجمعية</span></div></div>
+  <header class="site-header">
+    <div class="container navwrap">
+      <a class="brand" href="#home" aria-label="الرئيسية">
+        <div class="brandmark">ز</div>
+        <div><strong>جمعية منشأ منتوجات الزيتون</strong><small>إقليم قلعة السراغنة</small></div>
+      </a>
+      <button class="menu-toggle" id="menuToggle" aria-label="فتح القائمة">☰</button>
+      <nav id="mainNav">
+        <a href="#home">الرئيسية</a><a href="#about">من نحن</a><a href="#services">الخدمات</a>
+        <a href="#activities">الأنشطة</a><a href="#news">الأخبار</a><a href="#join">الانخراط</a>
+        <a href="#contact">تواصل معنا</a><a class="nav-admin" href="#admin">الإدارة</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="hero-pattern"></div>
+      <div class="container hero-content">
+        <div class="hero-copy">
+          <span class="eyebrow">من أجل قطاع زيتون منظم ومستدام</span>
+          <h1>معاً من أجل تنمية<br><em>منتوجات الزيتون</em></h1>
+          <p>فضاء للتواصل والتعاون وتبادل الخبرات، ودعم مهنيي ومنتجي ومثمني منتوجات الزيتون بإقليم قلعة السراغنة.</p>
+          <div class="hero-actions"><a class="btn btn-gold" href="#join">طلب الانخراط <span>←</span></a><a class="btn btn-outline" href="#about">اكتشف الجمعية</a></div>
+        </div>
+        <div class="hero-seal"><div class="seal-ring"><span class="seal-leaf">✦</span><b>الزيتون</b><small>الأصالة · الجودة · التنمية</small></div></div>
+      </div>
+      <div class="hero-bottom"><div class="container">جمعية مهنية · إقليم قلعة السراغنة</div></div>
+    </section>
+
+    <section class="quick-stats">
+      <div class="container stats-grid">
+        <div><strong>التعاون</strong><span>توحيد الجهود المهنية</span></div>
+        <div><strong>الجودة</strong><span>تثمين المنتوج المحلي</span></div>
+        <div><strong>التأطير</strong><span>التكوين وتبادل الخبرات</span></div>
+        <div><strong>التنمية</strong><span>شراكات ومبادرات مستدامة</span></div>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="container split">
+        <div>
+          <span class="eyebrow">من نحن</span><h2>إطار مهني يجمع الفاعلين في قطاع الزيتون</h2>
+          <p class="lead">جمعية منشأ منتوجات الزيتون بإقليم قلعة السراغنة، إطار جمعوي يهدف إلى المساهمة في تطوير القطاع، وتقوية التعاون بين مختلف المتدخلين، والنهوض بجودة المنتوجات وتسويقها.</p>
+          <p>تسعى الجمعية إلى خلق فضاء للحوار والتنسيق، والترافع عن القضايا المشتركة، وتنظيم المبادرات والأنشطة ذات الصلة بسلسلة الزيتون.</p>
+          <a class="text-link" href="#contact">تواصل مع الجمعية ←</a>
+        </div>
+        <div class="about-panel"><div class="olive-symbol">❧</div><h3>رؤيتنا</h3><p>قطاع زيتون قوي، منظم، تنافسي ومستدام، يثمن المؤهلات المحلية ويخدم مصالح الفاعلين والمجتمع.</p><div class="panel-line"></div><h3>رسالتنا</h3><p>التأطير والتنسيق والتعاون، وتشجيع الجودة والابتكار والتثمين المسؤول.</p></div>
+      </div>
+    </section>
+
+    <section id="services" class="section section-soft">
+      <div class="container"><div class="section-heading"><span class="eyebrow">ماذا نقدم؟</span><h2>خدمات الجمعية</h2><p>مبادرات عملية لدعم الأعضاء وتطوير سلسلة الزيتون.</p></div>
+        <div class="cards-grid">
+          <article class="info-card"><div class="card-icon">♧</div><h3>التأطير والتكوين</h3><p>لقاءات وورشات لتقوية المعارف التقنية والمهنية وتبادل التجارب.</p></article>
+          <article class="info-card"><div class="card-icon">✧</div><h3>الجودة والتثمين</h3><p>التحسيس بأهمية الجودة وتحسين الممارسات وتثمين المنتوجات.</p></article>
+          <article class="info-card"><div class="card-icon">⇄</div><h3>التنسيق والتعاون</h3><p>تقريب وجهات النظر وبناء جسور التعاون بين الفاعلين والشركاء.</p></article>
+          <article class="info-card"><div class="card-icon">◎</div><h3>المواكبة والترافع</h3><p>تتبع قضايا القطاع والتعريف بانشغالات المهنيين لدى الجهات المعنية.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="activities" class="section">
+      <div class="container"><div class="section-heading row-heading"><div><span class="eyebrow">الحياة الجمعوية</span><h2>الأنشطة واللقاءات</h2></div><span class="muted">آخر الأنشطة المعلنة</span></div>
+        <div id="activitiesList" class="content-list"><div class="empty-state">سيتم نشر الأنشطة واللقاءات فور الإعلان عنها.</div></div>
+      </div>
+    </section>
+
+    <section id="news" class="section section-soft">
+      <div class="container"><div class="section-heading row-heading"><div><span class="eyebrow">ابقوا على اطلاع</span><h2>الأخبار والمستجدات</h2></div><span class="muted">أخبار الجمعية والقطاع</span></div>
+        <div id="newsList" class="news-grid"><div class="empty-state">لا توجد أخبار منشورة حالياً.</div></div>
+      </div>
+    </section>
+
+    <section id="join" class="section join-section">
+      <div class="container join-layout">
+        <div><span class="eyebrow light">انضم إلى الجمعية</span><h2>قوتنا في تعاوننا</h2><p>إذا كنت من الفاعلين أو المهتمين بقطاع الزيتون ومنتوجاته بإقليم قلعة السراغنة، يمكنك تقديم طلب الانخراط عبر الاستمارة.</p><ul class="check-list"><li>التواصل مع الجمعية والاستفادة من خدماتها</li><li>المشاركة في الأنشطة واللقاءات</li><li>المساهمة في المبادرات المهنية المشتركة</li></ul></div>
+        <form id="joinForm" class="form-card">
+          <h3>طلب الانخراط</h3><p class="form-hint">يرجى إدخال المعلومات الأساسية بدقة.</p>
+          <label>الاسم الكامل أو اسم المؤسسة<input name="full_name" required maxlength="140" placeholder="الاسم الكامل / التسمية القانونية"></label>
+          <div class="form-row"><label>رقم الهاتف<input name="phone" required inputmode="tel" placeholder="06xxxxxxxx"></label><label>الجماعة<input name="commune" placeholder="الجماعة الترابية"></label></div>
+          <label>الصفة المهنية<select name="profession" required><option value="">اختر الصفة</option><option>منتج زيتون</option><option>وحدة إنتاج أو تحويل</option><option>تعاونية أو مجموعة ذات نفع اقتصادي</option><option>تاجر أو مسوق</option><option>مهني أو فاعل بالقطاع</option><option>صفة أخرى</option></select></label>
+          <label>نبذة أو ملاحظات<textarea name="notes" rows="3" placeholder="معلومات إضافية (اختياري)"></textarea></label>
+          <button class="btn btn-primary full" type="submit">إرسال طلب الانخراط</button><p id="joinMessage" class="form-message" aria-live="polite"></p>
+          <div class="form-foot">إرسال الطلب لا يعني القبول النهائي؛ تتم مراجعته من طرف إدارة الجمعية.</div>
+        </form>
+      </div>
+    </section>
+
+    <section id="member" class="section">
+      <div class="container member-area">
+        <div class="section-heading"><span class="eyebrow">فضاء خاص</span><h2>فضاء المنخرط</h2><p>ولوج الأعضاء المسجلين للاطلاع على بيانات العضوية والإعلانات.</p></div>
+        <form id="memberLogin" class="login-card"><label>البريد الإلكتروني<input type="email" name="email" required placeholder="name@example.com"></label><label>كلمة المرور<input type="password" name="password" required placeholder="كلمة المرور"></label><button class="btn btn-primary full">تسجيل الدخول</button><p id="memberMessage" class="form-message"></p></form>
+        <div id="memberDashboard" class="dashboard-card hidden"></div>
+      </div>
+    </section>
+
+    <section id="contact" class="section section-soft">
+      <div class="container contact-grid"><div><span class="eyebrow">نحن رهن إشارتكم</span><h2>تواصل معنا</h2><p>للاستفسارات أو الاقتراحات أو طلب معلومات حول أنشطة الجمعية وخدماتها.</p><div class="contact-item"><b>المقر</b><span>إقليم قلعة السراغنة – المغرب</span></div><div class="contact-item"><b>الهاتف</b><span>يضاف رقم التواصل الرسمي</span></div><div class="contact-item"><b>البريد الإلكتروني</b><span>يضاف البريد الرسمي للجمعية</span></div></div>
+        <form id="contactForm" class="form-card"><h3>أرسل رسالة</h3><label>الاسم<input name="name" required></label><label>رقم الهاتف أو البريد<input name="contact" required></label><label>موضوع الرسالة<input name="subject" required></label><label>نص الرسالة<textarea name="message" rows="4" required></textarea></label><button class="btn btn-primary full">إرسال الرسالة</button><p id="contactMessage" class="form-message"></p></form>
+      </div>
+    </section>
+
+    <section id="admin" class="section admin-section">
+      <div class="container"><div class="section-heading"><span class="eyebrow">فضاء الإدارة</span><h2>لوحة الإشراف الإداري</h2><p>هذا الفضاء مخصص للمسؤولين المخول لهم تدبير المنصة.</p></div>
+        <form id="adminLogin" class="login-card"><label>البريد الإلكتروني الإداري<input type="email" name="email" required></label><label>كلمة المرور<input type="password" name="password" required></label><button class="btn btn-primary full">دخول الإدارة</button><p id="adminMessage" class="form-message"></p></form>
+        <div id="adminDashboard" class="hidden">
+          <div class="admin-toolbar"><h3>مرحباً بك في لوحة الإدارة</h3><button id="logoutAdmin" class="btn btn-outline-dark">تسجيل الخروج</button></div>
+          <div class="admin-tabs"><button class="tab active" data-tab="requests">طلبات الانخراط</button><button class="tab" data-tab="posts">إضافة محتوى</button><button class="tab" data-tab="messages">رسائل التواصل</button></div>
+          <div id="adminPanel" class="admin-panel"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer"><div class="container footer-main"><div class="brand brand-light"><div class="brandmark">ز</div><div><strong>جمعية منشأ منتوجات الزيتون</strong><small>إقليم قلعة السراغنة</small></div></div><p>من أجل التعاون والجودة والتنمية المستدامة لقطاع الزيتون.</p><div class="footer-links"><a href="#about">من نحن</a><a href="#services">الخدمات</a><a href="#join">الانخراط</a><a href="#contact">تواصل معنا</a></div></div><div class="copyright">جميع الحقوق محفوظة © <span id="year"></span> جمعية منشأ منتوجات الزيتون بإقليم قلعة السراغنة</div></footer>
+  <div id="toast" class="toast" role="status"></div>
+  <script src="app.js"></script>
+</body>
+</html>
